@@ -5,6 +5,37 @@ body {
 	margin: 0 auto;
 }
 
+h1 {
+    margin: 50px;
+    font-size: 48px;
+}
+
+h2,
+p {
+    margin: 0;
+}
+
+.hraci {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hrac {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.kredencialy {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.kredencialy2 {
+    text-align: right;
+}
+
 
 .foto-hrac {
     width: 50px;
@@ -19,7 +50,7 @@ body {
     max-width: 548px;
     max-height: 548px;
     padding: 0;
-    margin: 0;
+    margin: 20px 0 0 0;
     list-style: none;
     background-image: url("obrazky/sachovnice.png");
     background-repeat: no-repeat;
