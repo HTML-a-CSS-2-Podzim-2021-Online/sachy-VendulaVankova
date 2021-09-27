@@ -1,0 +1,62 @@
+body {
+    font-family: sans-serif;
+	text-align: center;
+	max-width: 548px;
+	margin: 0 auto;
+}
+
+
+.foto-hrac {
+    width: 50px;
+    height: 50px; /* tady to bude uzpůsobení obrázku, jak nám bylo vysvětleno na hodině*/
+    border-radius: 10%;
+}
+
+.sachovnice {
+    display: grid;
+    grid-template-columns: repeat(8, 68.5px);
+    grid-template-rows: repeat(8, 68.5px);
+    max-width: 548px;
+    max-height: 548px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-image: url("obrazky/sachovnice.png");
+    background-repeat: no-repeat;
+    border: 10px solid black;
+    border-radius: 2%;
+}
+
+.sachovnice li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.strelec-cerna {
+    /*background: url(figurky/strelec-cerna.svg);
+    display: block;
+    background-size: auto;*/
+    max-height: 68.5px;
+    max-width: 68.5px;
+}
+
+.vysledek {
+    font-weight: normal;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 120px;
+    padding: 5px;
+    margin-bottom: 250px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #4c7dc0;
+    color: white;
+}
+
+
+
+/* foto uvnitř cover a procenta */
