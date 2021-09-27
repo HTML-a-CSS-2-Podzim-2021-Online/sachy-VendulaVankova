@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
 	text-align: center;
-	max-width: 548px;
+	max-width: 568px;
 	margin: 0 auto;
 }
 
@@ -38,22 +38,24 @@ p {
 
 
 .foto-hrac {
-    width: 50px;
-    height: 50px; /* tady to bude uzpůsobení obrázku, jak nám bylo vysvětleno na hodině*/
+    width: 68px;
+    height: 68px;
     border-radius: 10%;
+    object-fit: cover;
 }
 
 .sachovnice {
     display: grid;
-    grid-template-columns: repeat(8, 68.5px);
-    grid-template-rows: repeat(8, 68.5px);
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: repeat(8, 12.5%);
     max-width: 548px;
     max-height: 548px;
+    aspect-ratio: 1 / 1;
     padding: 0;
     margin: 20px 0 0 0;
     list-style: none;
     background-image: url("obrazky/sachovnice.png");
-    background-repeat: no-repeat;
+    background-position: cover;
     border: 10px solid black;
     border-radius: 2%;
 }
@@ -64,13 +66,52 @@ p {
     align-items: center;
 }
 
+/* verze 1 šachovnice - viz html
+
 .strelec-cerna {
-    /*background: url(figurky/strelec-cerna.svg);
-    display: block;
-    background-size: auto;*/
-    max-height: 68.5px;
-    max-width: 68.5px;
+    background-image: url(obrazky/figurky/strelec-cerna.svg);
+    background-size: cover;
+    background-position: center;
 }
+
+.pesec-cerna {
+    background-image: url(obrazky/figurky/pesec-cerna.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.pesec-bila {
+    background-image: url(obrazky/figurky/pesec-bila.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.kun-bila {
+    background-image: url(obrazky/figurky/kun-bila.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.kral-cerna {
+    background-image: url(obrazky/figurky/kral-cerna.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.vez-cerna {
+    background-image: url(obrazky/figurky/vez-cerna.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.kral-bila {
+    background-image: url(obrazky/figurky/kral-bila.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+*/
+
 
 .vysledek {
     font-weight: normal;
@@ -86,6 +127,83 @@ button {
     border-radius: 5px;
     background-color: #4c7dc0;
     color: white;
+}
+
+/*verze 2 šachovnice - viz html */
+
+.e8 {
+    background-image: url(obrazky/figurky/strelec-cerna.svg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 5;
+    grid-row: 1;
+}
+
+.a7 {
+    background-image: url(obrazky/figurky/pesec-cerna.svg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+
+.c6 {
+    background-image: url(obrazky/figurky/pesec-cerna.svg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 3;
+    grid-row: 3;
+}
+
+
+.d5 {
+    background-image: url(obrazky/figurky/pesec-bila.svg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 4;
+    grid-row: 4;
+}
+
+.h5 {
+    background-image: url(obrazky/figurky/pesec-cerna.svg);
+    background-size: cover;
+    background-position: center;
+    grid-column: -2;
+    grid-row: 4;
+}
+
+.b4 {
+    background-image: url(obrazky/figurky/kun-bila.svg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.f3 {
+    background-image: url(obrazky/figurky/kral-cerna.svg);
+    background-size: cover;
+    background-position: center;
+    grid-column: -4;
+    grid-row: -4;
+}
+
+
+.c1 {
+    background-image: url(obrazky/figurky/vez-cerna.svg);
+    background-size: cover;
+    background-position: center;
+    grid-column: 3;
+    grid-row: -2;
+}
+
+.f1 {
+    background-image: url(obrazky/figurky/kral-bila.svg);
+    background-size: cover;
+    background-position: center;
+    grid-column: -4;
+    grid-row: -2;
 }
 
 
